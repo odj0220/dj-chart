@@ -1,0 +1,40 @@
+.dj-chart-tooltip {
+  position: relative;
+  min-width: 30px;
+  min-height: 30px;
+  padding: 8px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.dj-chart-tooltip:after, .dj-chart-tooltip:before {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  bottom: -10px;
+  border-top-color: inherit;
+  left: calc(50% - 6px);
+}
+
+.dj-chart-tooltip:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 5px;
+  margin-top: -5px;
+}
+
+.dj-chart-tooltip:before {
+  border-color: rgba(0, 0, 0, 0);
+  border-width: 6px;
+  margin-top: -6px;
+}
+
+.dj-chart-tooltip.top:after, .dj-chart-tooltip.top:before{
+  top: 10px;
+}
+
+.dj-chart-tooltip.bottom:after, .dj-chart-tooltip.bottom:before{
+  bottom: 4px;
+}
